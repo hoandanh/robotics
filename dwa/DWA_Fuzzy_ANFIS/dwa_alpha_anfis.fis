@@ -1,0 +1,97 @@
+[System]
+Name='dwa_alpha_anfis'
+Type='sugeno'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=27
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='D0'
+Range=[0 10]
+NumMFs=3
+MF1='N':'gaussmf',[2.058 1.266]
+MF2='M':'gaussmf',[2.724 6.004]
+MF3='F':'gaussmf',[1.648 9.638]
+
+[Input2]
+Name='Dt'
+Range=[0 70]
+NumMFs=3
+MF1='N':'gaussmf',[16.19 1.161]
+MF2='M':'gaussmf',[14.66 35.27]
+MF3='F':'gaussmf',[15.78 69.22]
+
+[Input3]
+Name='theta'
+Range=[0 180]
+NumMFs=3
+MF1='S':'gaussmf',[39.43 -0.1455]
+MF2='M':'gaussmf',[40.55 88.3]
+MF3='L':'gaussmf',[38.25 180]
+
+[Output1]
+Name='alpha'
+Range=[0.0372634300500712 0.365777211324893]
+NumMFs=27
+MF1='out1mf1':'constant',[0.068797156582766]
+MF2='out1mf2':'constant',[0.0790843657551105]
+MF3='out1mf3':'constant',[0.0440466074767323]
+MF4='out1mf4':'constant',[0.0282512597565215]
+MF5='out1mf5':'constant',[0.185133027631007]
+MF6='out1mf6':'constant',[0.185865925191285]
+MF7='out1mf7':'constant',[0.0107874502647899]
+MF8='out1mf8':'constant',[0.214302192961576]
+MF9='out1mf9':'constant',[0.213214662673391]
+MF10='out1mf10':'constant',[0.101130294423281]
+MF11='out1mf11':'constant',[0.325594099132584]
+MF12='out1mf12':'constant',[0.326214463755368]
+MF13='out1mf13':'constant',[0.124087864395869]
+MF14='out1mf14':'constant',[0.299963318862446]
+MF15='out1mf15':'constant',[0.301520294880244]
+MF16='out1mf16':'constant',[0.0863370301760284]
+MF17='out1mf17':'constant',[0.192426470083718]
+MF18='out1mf18':'constant',[0.197206885345644]
+MF19='out1mf19':'constant',[0.0853811676123328]
+MF20='out1mf20':'constant',[0.272762352545076]
+MF21='out1mf21':'constant',[0.261052919131027]
+MF22='out1mf22':'constant',[0.1403224781549]
+MF23='out1mf23':'constant',[0.377872610088858]
+MF24='out1mf24':'constant',[0.366098090787911]
+MF25='out1mf25':'constant',[0.143269819409525]
+MF26='out1mf26':'constant',[0.449107067100063]
+MF27='out1mf27':'constant',[0.436665111714005]
+
+[Rules]
+1 1 1, 1 (1) : 1
+1 1 2, 2 (1) : 1
+1 1 3, 3 (1) : 1
+1 2 1, 4 (1) : 1
+1 2 2, 5 (1) : 1
+1 2 3, 6 (1) : 1
+1 3 1, 7 (1) : 1
+1 3 2, 8 (1) : 1
+1 3 3, 9 (1) : 1
+2 1 1, 10 (1) : 1
+2 1 2, 11 (1) : 1
+2 1 3, 12 (1) : 1
+2 2 1, 13 (1) : 1
+2 2 2, 14 (1) : 1
+2 2 3, 15 (1) : 1
+2 3 1, 16 (1) : 1
+2 3 2, 17 (1) : 1
+2 3 3, 18 (1) : 1
+3 1 1, 19 (1) : 1
+3 1 2, 20 (1) : 1
+3 1 3, 21 (1) : 1
+3 2 1, 22 (1) : 1
+3 2 2, 23 (1) : 1
+3 2 3, 24 (1) : 1
+3 3 1, 25 (1) : 1
+3 3 2, 26 (1) : 1
+3 3 3, 27 (1) : 1
